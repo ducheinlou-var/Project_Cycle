@@ -4,33 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/methio/adafruitIO-class@latest/index.js"></script>
+    <script src="script.js" defer></script>
+
 </head>
 <body>
-    <div> 
-        <div>
-        <img
-        src="project_cycle/sphere_bordeaux.png"
-        alt="menstruation phase logo"
-        </div>
-        <h1>menstration phase</h1>
-        <h2>hormone status</h2>
-        <p> Estrogen and progesterone are at their lowest. The uterine lining sheds, which can bring cramps and fatigue.</p>
-       
-    <!--graphique -->
+<div id="menstrual"> 
+    <div class="sphere"> 
+        <img class="logo"
+        src="assets/sphere_bordeaux.png"
+        alt="menstruation phase logo">
+    </div>
 
-        <img 
+    <div class = "titre" >
+        <h1>MENSTRUATION</h1>
+        <h3>phase</h3>
+    </div>
+    
+
+    <h2>HORMONE STATUS</h2>
+    <p> Estrogen and progesterone are at their lowest. The uterine lining sheds, which can bring cramps and fatigue.</p>
+    
+    <!--graphique -->
+    <div class="graphique">
+        <img class="courbe"
             src="assets/hormone_curve_menstruation.png"
             alt="graphique hormone">
-        
-        <img 
-            src="assets/bulle_bordeau.png"
-            alt="bulle bordeau"
-        <img 
-            src="assets/bulle_bleu.png"
-            alt="bulle bleu"
+    
+            <div class="legende"> 
+                <p class="p2" id="estrogen">Estrogen</p>
+                 <p class="p3" id="progesterone">Progesterone</p>
+            </div>
+
+        <div class="bulle bordeau inactive">
+            <img 
+                src="assets/bulle_bordeau.png"
+                alt="bulle bordeau">
+
+            <p class="p1">helps develop female sexual characteristics, regulates<br>the menstrual cycle, and builds up the 
+            lining of the uterus.</p>
+        </div>
+
+        <div class="bulle bleu inactive">
+            <img 
+                src="assets/bulle_bleu.png"
+                alt="bulle bleu">
+                
+            <p class="p1">prepares and maintains the lining of the uterus for a<br>possible pregnancy. It also slightly raises body<br>temperature after ovulation. </p>
+
+        </div>
+    </div>
+    
 
     <!-- icone en dessous du graphique -->
-
+    <div class="icones">
         <img 
             src="assets/hot_water_bottle_cramps.png"
             alt="bouillote">
@@ -41,22 +70,89 @@
             src="assets/fatigue_moon.png"
             alt="lune">
         
-    
-
-        <h2>ENERGY NEEDED</h2>
-        <p> Low. Favor rest, slow walks, stretching and gentle yoga. Listen to your body and slow down without guilt.</p>
-    <!--insert battery image and 3 icons more-->  
-
-        <h2>FOOD</h2>
-        <p> Iron-rich foods (lentils, spinach, red meat, tofu) with vitamin C to absorb them. </p>
-    <!-- insert image of teh food said -->
-        <p>Warm, comforting meals like soups and stews.  </p>
-    <!-- insert image of teh food said-->
-        <p> Omega-3s and a little dark chocolate for magnesium. Stay well hydrated.</p>
-    <!--insert image of teh food said-->
-
-
     </div>
 
+    <h2>ENERGY NEEDED</h2>
+
+    <p> Low. Favor rest, slow walks, stretching and gentle yoga. Listen to your body and slow down without guilt.</p>
+    
+    <div class="iconeBatterie">
+        <img
+            src="assets/battery_menstruation.png"
+            alt="battery menstruation">
+    </div>
+
+    <div class="icones">
+        <img 
+            src="assets/listen_body_heart.png"
+            alt="listen to your body">
+
+        <img 
+            src="assets/yoga_mat.png"
+            alt="yoga mat">
+
+        <img 
+            src="assets/rest_bed.png"
+            alt="rest bed" >
+    </div>
+        
+
+    <h2>FOOD</h2>
+    <p> Iron-rich foods (lentils, spinach, red meat, tofu) with vitamin C to absorb them. </p>
+                
+     <div class="icones">       
+            <img 
+                src="assets/lentils.png"
+                alt="lentils">
+            
+            <img 
+                src="assets/spinach.png"
+                alt="spinach">
+
+            <img
+                src="assets/tofu.png"
+                alt="tofu">
+     </div>
+    <div class="icones2">
+
+            <img
+                src="assets/red_meat.png"
+                alt="red meat">
+
+            <img
+                src="assets/orange_vitamin_c.png"
+                alt="vitamin c">
+    </div>
+    
+        <p>Warm, comforting meals like soups and stews.  </p>
+    
+    <div class="icones2">    
+    
+            <img
+                src="assets/soup.png"
+                alt="soup">
+            
+            <img
+                src="assets/stew.png"
+                alt="stew">
+    </div>
+
+        <p> Omega-3s and a little dark chocolate for magnesium. Stay well hydrated.</p>
+            
+    <div class="icones">
+            <img
+                src="assets/fish_omega3.png"
+                alt="omega 3">
+            
+            <img
+                src="assets/dark_chocolate.png"
+                alt="dark chocolate">
+
+            <img
+                src="assets/water.png"
+                alt="water glass">
+
+    </div>
+    </div> <!-- fin menstrual -->
 </body>
 </html>

@@ -1,0 +1,205 @@
+
+
+                                        /* Satoshi */
+@font-face{
+    font-family: "Satoshi";
+    src: url("assets/Satoshi-LightItalic.otf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: "Satoshi";
+    src: url("assets/Satoshi-BoldItalic.otf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: "Satoshi";
+    src: url("assets/Satoshi-BlackItalic.otf");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: "Satoshi";
+    src: url("assets/Satoshi-Regular.otf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    background-color: #F7F6D7;
+    font-family: "Satoshi", sans-serif;
+    font-style: italic;
+    color: #771441;
+}
+
+#menstrual{
+    max-width: 393px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.logo{
+    display: block;
+    width: 240px;
+    margin: 0 auto;
+}
+
+.titre{
+    text-align: center;
+}
+
+/* "menstruation" */
+h1{
+    font-weight: 900;
+    font-size: 32px;
+    text-transform: lowercase;
+    color: #771441;
+}
+
+/* "phase" */
+h3{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 40px;
+    color: #771441;
+}
+
+/* HORMONE STATUS, ENERGY NEEDED, FOOD */
+h2{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 20px;
+    color: #771441;
+}
+
+
+p{
+   font-weight: 300;
+    font-size: 20px;
+    color: #771441;
+}
+
+/* graphique */
+
+.graphique{
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+}
+
+
+/* courbe centrée  */
+.courbe{
+    display: block;
+    width: 185px;
+    margin: 0 auto;
+
+}
+
+.bulle{
+    position: absolute;
+    width: 95%;
+}
+
+.legende{
+    position: absolute;
+    left: 0;
+    top: 90px;
+}
+.bulle img{
+    width: 100%;
+}
+
+.bordeau{
+    top: -10px;
+    left: 0;
+}
+
+.bleu{
+    top: 8px;
+    left: 5%;
+}
+
+
+.p1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 6px 12px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11px;
+    color: white;
+}
+.inactive{
+    display: none;
+}
+
+.p2,
+.p3{
+    top: 100%;
+    margin: 0;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+
+
+.icones,
+.icones2{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.icones img,
+.icones2 img{
+    width: 80px;
+}
+
+/* la batterie, grande et centrée */
+.iconeBatterie img{
+    display: block;
+    width: 165px;
+    margin: 20px auto;
+}
+
+
+
+/* estrogen */
+.p2{
+    color: #771441;
+}
+
+/* Progesterone */
+.p3{
+    color: #5A6FD8;
+}
+
+
+
+.sphere{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sphere.logo{
+    width: 260px;
+    height: 260px;
+}
+
+
+

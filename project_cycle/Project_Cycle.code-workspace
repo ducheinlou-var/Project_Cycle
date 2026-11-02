@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../DWW-shrek"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Project_Cycle"
+	}
+}
