@@ -55,6 +55,8 @@ Here is a preview of the assignment.
   <source src="video4.mov" type="video/mp4">
 </video>
 
+[![Watch the video](video4.mov)](video4.mov)
+
 ## Video
 
 https://youtu.be/9hr5H0jj_F0
