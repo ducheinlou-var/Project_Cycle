@@ -11,7 +11,7 @@ Voici la table des matières de mon rendu
 ## schematic view
 <picture>
     <img
-        src="schem_view.png" 
+        src="shem_view.png" 
         alt="schematic view" 
         height="360" 
         width="640" 
