@@ -6,153 +6,535 @@
     <title>Document</title>
 
     <link href="style.css" rel="stylesheet">
+    <!-- on charge les librairies, une seuile fois ça suffit -->
     <script src="https://cdn.jsdelivr.net/gh/methio/adafruitIO-class@latest/index.js"></script>
     <script src="script.js" defer></script>
 
 </head>
+
 <body>
-<div id="menstrual"> 
-    <div class="sphere"> 
-        <img class="logo"
-        src="assets/sphere_bordeaux.png"
-        alt="menstruation phase logo">
-    </div>
+    <!--               ##################      page d'accueil             #########################                -->
+<div class="accueil">
+  <img class="logo" src="assets/accueil/cycle_dark.png" alt="Cycle">
 
-    <div class = "titre" >
-        <h1>MENSTRUATION</h1>
-        <h3>phase</h3>
-    </div>
-    
+  <p class="hello">Hello jane !<br>show my cycle</p>
 
-    <h2>HORMONE STATUS</h2>
-    <p> Estrogen and progesterone are at their lowest. The uterine lining sheds, which can bring cramps and fatigue.</p>
-    
-    <!--graphique -->
-    <div class="graphique">
-        <img class="courbe"
-            src="assets/hormone_curve_menstruation.png"
-            alt="graphique hormone">
-    
-            <div class="legende"> 
-                <p class="p2" id="estrogen">Estrogen</p>
-                 <p class="p3" id="progesterone">Progesterone</p>
+  <p class="lucid">lucid...</p>
+    <a href="#next-page-lie">
+        <img class="fleche" src="assets/accueil/vector.png" alt="Voir mon cycle">
+    </a>
+  
+
+</div> <!-- fin page d'accueil -->
+
+<div id="next-page-lie">
+
+
+
+        <!--               ##################      MENSTRUAL             #########################                -->
+    <div id="menstrual" class="inactive"> 
+        <div class="sphere"> 
+            <img class="logo"
+            src="assets/menstrual/sphere_bordeaux.png"
+            alt="menstruation phase logo">
+        </div>
+
+        <div class = "titre" >
+            <h1>MENSTRUAL</h1>
+            <h3>phase</h3>
+            <p>3 to 7 days</p>
+        </div>
+        
+
+        <h2>HORMONE STATUS</h2>
+        <p> Estrogen and progesterone are at their lowest. The uterine lining sheds, which can bring cramps and fatigue.</p>
+        
+        <!--graphique -->
+        <div class="graphique">
+            <img class="courbe"
+                src="assets/menstrual/hormone_curve_menstruation.png"
+                alt="graphique hormone">
+        
+                <div class="legende"> 
+                    <p class="p2" id="estrogen">Estrogen</p>
+                    <p class="p3" id="progesterone">Progesterone</p>
+                </div>
+
+            <div class="bulle bordeau inactive">
+                <img 
+                    src="assets/menstrual/bulle_bordeau.png"
+                    alt="bulle bordeau">
+
+                <p class="p1">helps develop female sexual characteristics, regulates<br>the menstrual cycle, and builds up the 
+                lining of the uterus.</p>
             </div>
 
-        <div class="bulle bordeau inactive">
-            <img 
-                src="assets/bulle_bordeau.png"
-                alt="bulle bordeau">
+            <div class="bulle bleu inactive">
+                <img 
+                    src="assets/menstrual/bulle_bleu.png"
+                    alt="bulle bleu">
+                    
+                <p class="p1">prepares and maintains the lining of the uterus for a<br>possible pregnancy. It also slightly raises body<br>temperature after ovulation. </p>
 
-            <p class="p1">helps develop female sexual characteristics, regulates<br>the menstrual cycle, and builds up the 
-            lining of the uterus.</p>
+            </div>
         </div>
-
-        <div class="bulle bleu inactive">
-            <img 
-                src="assets/bulle_bleu.png"
-                alt="bulle bleu">
-                
-            <p class="p1">prepares and maintains the lining of the uterus for a<br>possible pregnancy. It also slightly raises body<br>temperature after ovulation. </p>
-
-        </div>
-    </div>
-    
-
-    <!-- icone en dessous du graphique -->
-    <div class="icones">
-        <img 
-            src="assets/hot_water_bottle_cramps.png"
-            alt="bouillote">
-        <img 
-            src="assets/period_drop.png"
-            alt="sang">
-         <img 
-            src="assets/fatigue_moon.png"
-            alt="lune">
-        
-    </div>
-
-    <h2>ENERGY NEEDED</h2>
-
-    <p> Low. Favor rest, slow walks, stretching and gentle yoga. Listen to your body and slow down without guilt.</p>
-    
-    <div class="iconeBatterie">
-        <img
-            src="assets/battery_menstruation.png"
-            alt="battery menstruation">
-    </div>
-
-    <div class="icones">
-        <img 
-            src="assets/listen_body_heart.png"
-            alt="listen to your body">
-
-        <img 
-            src="assets/yoga_mat.png"
-            alt="yoga mat">
-
-        <img 
-            src="assets/rest_bed.png"
-            alt="rest bed" >
-    </div>
         
 
-    <h2>FOOD</h2>
-    <p> Iron-rich foods (lentils, spinach, red meat, tofu) with vitamin C to absorb them. </p>
+        <!-- icone en dessous du graphique -->
+        <div class="icones">
+            <img 
+                src="assets/menstrual/hot_water_bottle_cramps.png"
+                alt="bouillote">
+            <img 
+                src="assets/menstrual/period_drop.png"
+                alt="sang">
+            <img 
+                src="assets/menstrual/fatigue_moon.png"
+                alt="lune">
+            
+        </div>
+
+        <h2>ENERGY NEEDED</h2>
+
+        <p> Low. Favor rest, slow walks, stretching and gentle yoga. Listen to your body and slow down without guilt.</p>
+        
+        <div class="iconeBatterie">
+            <img
+                src="assets/menstrual/battery_menstruation.png"
+                alt="battery menstruation">
+        </div>
+
+        <div class="icones">
+            <img 
+                src="assets/menstrual/listen_body_heart.png"
+                alt="listen to your body">
+
+            <img 
+                src="assets/menstrual/yoga_mat.png"
+                alt="yoga mat">
+
+            <img 
+                src="assets/menstrual/rest_bed.png"
+                alt="rest bed" >
+        </div>
+            
+
+        <h2>FOOD</h2>
+        <p> Iron-rich foods (lentils, spinach, red meat, tofu) with vitamin C to absorb them. </p>
+                    
+        <div class="icones">       
+                <img 
+                    src="assets/menstrual/lentils.png"
+                    alt="lentils">
                 
-     <div class="icones">       
-            <img 
-                src="assets/lentils.png"
-                alt="lentils">
-            
-            <img 
-                src="assets/spinach.png"
-                alt="spinach">
+                <img 
+                    src="assets/menstrual/spinach.png"
+                    alt="spinach">
 
-            <img
-                src="assets/tofu.png"
-                alt="tofu">
-     </div>
-    <div class="icones2">
+                <img
+                    src="assets/menstrual/tofu.png"
+                    alt="tofu">
+        </div>
+        <div class="icones2">
 
-            <img
-                src="assets/red_meat.png"
-                alt="red meat">
+                <img
+                    src="assets/menstrual/red_meat.png"
+                    alt="red meat">
 
-            <img
-                src="assets/orange_vitamin_c.png"
-                alt="vitamin c">
-    </div>
-    
-        <p>Warm, comforting meals like soups and stews.  </p>
-    
-    <div class="icones2">    
-    
-            <img
-                src="assets/soup.png"
-                alt="soup">
-            
-            <img
-                src="assets/stew.png"
-                alt="stew">
-    </div>
+                <img
+                    src="assets/menstrual/orange_vitamin_c.png"
+                    alt="vitamin c">
+        </div>
+        
+            <p>Warm, comforting meals like soups and stews.  </p>
+        
+        <div class="icones2">    
+        
+                <img
+                    src="assets/menstrual/soup.png"
+                    alt="soup">
+                
+                <img
+                    src="assets/menstrual/stew.png"
+                    alt="stew">
+        </div>
 
-        <p> Omega-3s and a little dark chocolate for magnesium. Stay well hydrated.</p>
-            
-    <div class="icones">
-            <img
-                src="assets/fish_omega3.png"
-                alt="omega 3">
-            
-            <img
-                src="assets/dark_chocolate.png"
-                alt="dark chocolate">
+            <p> Omega-3s and a little dark chocolate for magnesium. Stay well hydrated.</p>
+                
+        <div class="icones">
+                <img
+                    src="assets/menstrual/fish_omega3.png"
+                    alt="omega 3">
+                
+                <img
+                    src="assets/menstrual/dark_chocolate.png"
+                    alt="dark chocolate">
 
-            <img
-                src="assets/water.png"
-                alt="water glass">
+                <img
+                    src="assets/menstrual/water.png"
+                    alt="water glass">
 
-    </div>
+        </div>
     </div> <!-- fin menstrual -->
+
+    <!--               ##################      FOLICULAR               #########################                -->
+                <div id="folicular" class="inactive"> 
+        <div class="sphere"> 
+            <img class="logo"
+            src="assets/folicular/sphere_jaune.png"
+            alt="folicular phase logo">
+        </div>
+
+        <div class = "titre" >
+            <h1>FOLICULAR</h1>
+            <h3>phase</h3>
+            <p> 8 days </p>
+        </div>
+        
+
+        <h2>HORMONE STATUS</h2>
+        <p> Estrogen rises steadily as follicles mature. Mood, focus and motivation usually lift.</p>
+        
+        <!--graphique -->
+        <div class="graphique">
+            <img class="courbe"
+                src="assets/folicular/hormone_curve_folicular.png"
+                alt="graphique hormone">
+        
+                <div class="legende"> 
+                    <p class="p2" id="estrogen">Estrogen</p>
+                    <p class="p3" id="progesterone">Progesterone</p>
+                </div>
+
+            <div class="bulle bordeau inactive">
+                <img 
+                    src="assets/folicular/bulle_bordeau.png"
+                    alt="bulle bordeau">
+
+                <p class="p1">helps develop female sexual characteristics, regulates<br>the menstrual cycle, and builds up the 
+                lining of the uterus.</p>
+            </div>
+
+            <div class="bulle bleu inactive">
+                <img 
+                    src="assets/folicular/bulle_bleu.png"
+                    alt="bulle bleu">
+                    
+                <p class="p1">prepares and maintains the lining of the uterus for a<br>possible pregnancy. It also slightly raises body<br>temperature after ovulation. </p>
+
+            </div>
+        </div>
+        
+
+        <!-- icone en dessous du graphique -->
+        <div class="icones">
+            <img 
+                src="assets/folicular/mood_sun.png"
+                alt="bouillote">
+            <img 
+                src="assets/folicular/focus_bulb.png"
+                alt="sang">
+            <img 
+                src="assets/folicular/follicle.png"
+                alt="lune">
+            
+        </div>
+
+        <h2>ENERGY NEEDED</h2>
+
+        <p> Rising. A good time to try new things, start projects, and increase intensity with cardio, dance or strength training.</p>
+        
+        <div class="iconeBatterie">
+            <img
+                src="assets/folicular/battery_folicular.png"
+                alt="battery folicular">
+        </div>
+
+        <div class="icones">
+            <img 
+                src="assets/folicular/strength_dumbbell.png"
+                alt="listen to your body">
+
+            <img 
+                src="assets/folicular/dance_music.png"
+                alt="yoga mat">
+
+        </div>
+            
+
+        <h2>FOOD</h2>
+        <p> Fresh, light and colorful. 
+    Lean proteins, whole grains, fresh vegetables, and fermented foods like yogurt, kimchi or kefir to support digestion. </p>
+                    
+        <div class="icones2">       
+                <img 
+                    src="assets/folicular/kimchi.png"
+                    alt="kimchi">
+                
+                <img 
+                    src="assets/folicular/carrot.png"
+                    alt="carrot">
+
+        </div>
+        <div class="icones2">
+
+                <img
+                    src="assets/folicular/yogurt.png"
+                    alt="yogurt">
+
+                <img
+                    src="assets/folicular/kefir.png"
+                    alt="kefir">
+        </div>
+        </div>
+        </div> <!-- fin follicular -->
+
+    <!--               ##################      OVULATION               #########################                -->
+                <div id="ovulation" class="inactive"> 
+        <div class="sphere"> 
+            <img class="logo"
+            src="assets/ovulation/sphere_rose.png"
+            alt="ovulation phase logo">
+        </div>
+
+        <div class = "titre" >
+            <h1>OVULATION</h1>
+            <h3>phase</h3>
+            <p> 3 days </p>
+        </div>
+        
+
+        <h2>HORMONE STATUS</h2>
+        <p> Estrogen peaks and a surge of LH triggers the release of an egg. Testosterone rises slightly, boosting confidence and libido.</p>
+        
+        <!--graphique -->
+        <div class="graphique">
+            <img class="courbe"
+                src="assets/ovulation/hormone_curve_ovulation.png"
+                alt="graphique hormone">
+        
+                <div class="legende"> 
+                    <p class="p2" id="estrogen">Estrogen</p>
+                    <p class="p3" id="progesterone">Progesterone</p>
+                </div>
+
+            <div class="bulle bordeau inactive">
+                <img 
+                    src="assets/ovulation/bulle_bordeau.png"
+                    alt="bulle bordeau">
+
+                <p class="p1">helps develop female sexual characteristics, regulates<br>the menstrual cycle, and builds up the 
+                lining of the uterus.</p>
+            </div>
+
+            <div class="bulle bleu inactive">
+                <img 
+                    src="assets/ovulation/bulle_bleu.png"
+                    alt="bulle bleu">
+                    
+                <p class="p1">prepares and maintains the lining of the uterus for a<br>possible pregnancy. It also slightly raises body<br>temperature after ovulation. </p>
+
+            </div>
+        </div>
+        
+
+        <!-- icone en dessous du graphique -->
+        <div class="icones">
+            <img 
+                src="assets/ovulation/egg_release.png"
+                alt="bouillote">
+            <img 
+                src="assets/ovulation/confidence_heart.png"
+                alt="sang">
+            <img 
+                src="assets/ovulation/uterus.png"
+                alt="lune">
+            
+        </div>
+
+        <h2>ENERGY NEEDED</h2>
+
+        <p> At its peak. Ideal for intense workouts (HIIT, running), social plans and important conversations.</p>
+        
+        <div class="iconeBatterie">
+            <img
+                src="assets/ovulation/battery_ovulation.png"
+                alt="battery ovulation">
+        </div>
+
+        <div class="icones">
+            <img 
+                src="assets/ovulation/hiit_stopwatch.png"
+                alt="listen to your body">
+
+            <img 
+                src="assets/ovulation/dance_music.png"
+                alt="yoga mat">
+            
+            <img 
+                src="assets/ovulation/social_talk.png"
+                alt="social talk">
+
+
+        </div>
+            
+
+        <h2>FOOD</h2>
+        <p> Fiber and antioxidants: raw vegetables, berries, leafy greens, and cruciferous vegetables (broccoli, cauliflower).</p>
+                    
+        <div class="icones">       
+                <img 
+                    src="assets/ovulation/berries.png"
+                    alt="berries">
+                
+                <img 
+                    src="assets/ovulation/brocoli.png"
+                    alt="brocoli">
+                
+                <img 
+                    src="assets/ovulation/cauliflower.png"
+                    alt="cauliflower">
+
+        </div>
+
+            <p>Keep hydrating, since your body works hard.</p>
+        <div class="icones2">
+
+                <img
+                    src="assets/ovulation/water.png"
+                    alt="water">
+        </div>
+        </div>
+        </div> <!-- fin ovulation -->
+
+    <!--               ##################      LUTEAL               #########################                -->
+                <div id="luteal" class="inactive"> 
+        <div class="sphere"> 
+            <img class="logo"
+            src="assets/luteal/sphere_bleu.png"
+            alt="luteal phase logo">
+        </div>
+
+        <div class = "titre" >
+            <h1>LUTEAL</h1>
+            <h3>phase</h3>
+            <p> 12 days </p>
+        </div>
+        
+
+        <h2>HORMONE STATUS</h2>
+        <p> Progesterone takes over, then both hormones drop before your period. PMS symptoms like bloating, irritability and cravings may appear.</p>
+        
+        <!--graphique -->
+        <div class="graphique">
+            <img class="courbe"
+                src="assets/luteal/hormone_curve_luteal.png"
+                alt="graphique hormone">
+        
+                <div class="legende"> 
+                    <p class="p2" id="estrogen">Estrogen</p>
+                    <p class="p3" id="progesterone">Progesterone</p>
+                </div>
+
+            <div class="bulle bordeau inactive">
+                <img 
+                    src="assets/luteal/bulle_bordeau.png"
+                    alt="bulle bordeau">
+
+                <p class="p1">helps develop female sexual characteristics, regulates<br>the menstrual cycle, and builds up the 
+                lining of the uterus.</p>
+            </div>
+
+            <div class="bulle bleu inactive">
+                <img 
+                    src="assets/luteal/bulle_bleu.png"
+                    alt="bulle bleu">
+                    
+                <p class="p1">prepares and maintains the lining of the uterus for a<br>possible pregnancy. It also slightly raises body<br>temperature after ovulation. </p>
+
+            </div>
+        </div>
+        
+
+        <!-- icone en dessous du graphique -->
+        <div class="icones2">
+            <img 
+                src="assets/luteal/cookie.png"
+                alt="cookie">
+            <img 
+                src="assets/luteal/pms_cloud.png"
+                alt="nuage">
+            
+        </div>
+
+        <h2>ENERGY NEEDED</h2>
+
+        <p>Gradually decreasing. Switch to moderate activity such as pilates, strength training at a lighter pace, or walks. Protect your rest and sleep.</p>
+        
+        <div class="iconeBatterie">
+            <img
+                src="assets/luteal/battery_luteal.png"
+                alt="battery luteal">
+        </div>
+
+        <div class="icones2">
+            <img 
+                src="assets/luteal/pilates_ball.png"
+                alt="pilates ball">
+
+            <img 
+                src="assets/luteal/walking_sneakers.png"
+                alt="walking sneakers">
+
+
+        </div>
+            
+
+        <h2>FOOD</h2>
+        <p> Your appetite may naturally increase, so honor it with complex carbs (sweet potato, oats, brown rice). </p>
+                    
+        <div class="icones">       
+                <img 
+                    src="assets/luteal/sweet_potato.png"
+                    alt="sweet potato">
+                
+                <img 
+                    src="assets/luteal/oats.png"
+                    alt="oats">
+                
+                <img 
+                    src="assets/luteal/brown_rice.png"
+                    alt="brown rice">
+
+        </div>
+
+            <p>Magnesium and B6 (nuts, seeds, banana, dark chocolate) help with mood and cramps.</p>
+        <div class="icones">
+
+                <img
+                    src="assets/luteal/seeds.png"
+                    alt="seeds">
+                <img
+                    src="assets/luteal/dark_chocolate.png"
+                    alt="dark chocolate">
+                <img
+                    src="assets/luteal/banana.png"
+                    alt="banana">
+        </div>
+
+        <div class="icones2">
+
+                <img
+                    src="assets/luteal/magnesium.png"
+                    alt="magnesium">
+                <img
+                    src="assets/luteal/nuts.png"
+                    alt="nuts">
+        </div>
+
+        </div>
+        </div> <!-- fin luteal -->
+</div>
 </body>
 </html>
+
