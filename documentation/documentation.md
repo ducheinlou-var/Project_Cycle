@@ -55,7 +55,11 @@ Here is a preview of the assignment.
   <source src="video4.mov" type="video/mp4">
 </video>
 
+[![Watch the video](video1.mov)](video1.mov)
+[![Watch the video](video2.mov)](video2.mov)
+[![Watch the video](video3.mov)](video3.mov)
 [![Watch the video](video4.mov)](video4.mov)
+
 
 ## Video
 
